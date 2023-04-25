@@ -15,10 +15,6 @@ class AuthService {
 
   AuthService(this._auth, this._preferences);
 
-  /// Creates an "anonymous" session by generating a random email
-  /// and using the same password.
-  /// Email persisted to avoid creating a new user every time
-  /// the app is restarted.
   Future<AuthResponse> signIn(String nickname) async {
     _preferences.setString(_nicknameKey, nickname);
     if (_preferences.containsKey(_emailKey)) {
@@ -42,6 +38,6 @@ class AuthService {
       _preferences.getString(_nicknameKey) ?? NicknameGenerator.generate;
 
   static String get _randomEmail {
-    return '${Uuid().v4().toString()}@dartling.dev';
+    return '${Uuid().v4().toString()}@bugluay.dev';
   }
 }

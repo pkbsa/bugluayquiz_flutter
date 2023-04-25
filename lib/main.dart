@@ -7,7 +7,7 @@ import 'package:flutter/gestures.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  GestureBinding.instance?.resamplingEnabled = true;
+  GestureBinding.instance.resamplingEnabled = true;
   final dependencies = await Dependencies.init;
   runApp(BugluayApp(dependencies: dependencies));
 }
