@@ -2,6 +2,8 @@
 
 BuGluay Quiz is a mobile quiz game application implemented using the Flutter framework. This project is a redesign and implementation of the original [SupaQuiz](https://github.com/yallurium/supaquiz) project with additional features such as difficulty options and categories. The app is connected to a backend service provided by [Supabase](https://supabase.io/) for data storage and retrieval.
 
+Project Document : [Docs/bugluay_document](https://github.com/pkbsa/bugluayquiz_flutter/tree/master/docs/bugluay_document)
+
 ## Features
 
 - Multiple choice quiz game
